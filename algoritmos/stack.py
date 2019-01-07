@@ -1,3 +1,5 @@
+# Pilhas: first in first out -> FIFO
+
 class Node:
     def __init__(self, value):
         self.value = value
@@ -30,13 +32,3 @@ class Stack:
         self.first = self.first.next
         self.size -= 1
         return temp.value
-
-s = Stack()
-
-print(s.push('First'))
-print(s.push('Second'))
-print(s.push('Third'))
-print(s.pop())
-print(s.pop())
-print(s.pop())
-print(s.pop())
