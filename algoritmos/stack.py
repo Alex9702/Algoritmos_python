@@ -11,6 +11,7 @@ class Stack:
         self.size = 0;
         self.first = None
         self.last = None
+        self._lista = []
     
     def push(self, value):
         node = Node(value)
@@ -32,3 +33,6 @@ class Stack:
         self.first = self.first.next
         self.size -= 1
         return temp.value
+    
+    def __getitem__(self, key):
+        return []
